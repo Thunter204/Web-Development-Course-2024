@@ -1,0 +1,25 @@
+<h1>All the Animals</h1>
+<h2>Rabbit:</h2>
+<img src="./rabbit.png"/>
+<!-- ./ takes us to all the contents inside Folder0(parent directory), 
+    Rabbit is inside the directory of Folder0-->
+
+<h2>Cat:</h2>
+<img src="./Folder3/cat.png"/>
+<!--./ takes us to all the conetents inside Folder0(parent directory), 
+    which includes Folder3.cat is inside Folder3-->
+
+<h2>Dog:</h2>
+<img src="../dog.png"/>
+<!-- ../ takes us to 4.0 File Paths(a level UP from parent directy Folder0),
+    Dog is on the same level as Folder0 and Folder1. -->
+
+<h2>Fish:</h2>
+<img src="../Folder1/fish.png"/>
+<!--../ takes us to 4.0 File Paths(a level UP from parent directory Folder0),
+    then takes us to Folder1 where fish is located-->
+
+<h2>Bird:</h2>
+<img src="../Folder1/Folder2/bird.png"/>
+<!--../ takes us to 4.0 File Paths(a level UP from parent directory Folder0),
+        Folder2 is lovated inside Folder1, which has bird-->

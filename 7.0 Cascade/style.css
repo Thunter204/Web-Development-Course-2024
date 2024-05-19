@@ -1,0 +1,38 @@
+/* Don't change the existing CSS. */
+
+/*10px of padding is already applied to all of the boxes
+the id selector (#) is more specific than the class selector.
+if i changed th epadding in the out-box id selector, it would change
+because it is more specific than the class box selector. 
+
+The reason why the class selector box is above the 
+inner box class selecter is because they both have the same specificity, 
+but ALL the divs are set to blue. */
+
+#outer-box{
+  background-color: purple;
+}
+
+/*origional*/
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+.inner-box{
+  background-color: red;
+}
+
+
+/*origional*/
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.white-text{
+  color: white;
+  
+}
+
