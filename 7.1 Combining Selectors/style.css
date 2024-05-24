@@ -1,0 +1,72 @@
+/* Write your code here: */
+
+/*
+GRUOPING SELECTOR
+target both the h1 and h2 and AND MAKE VIOLET
+*/
+h1,h2 {
+    color: blueviolet;
+}
+
+
+/*
+CHILD SELECTOR
+target div class="box" and the paragraph element
+below
+
+initially put div.box > p
+*/
+.box > p {
+    color:firebrick;
+}
+
+
+/*
+DESCENDANT SELECTOR
+target list elements and make them blue
+
+the ancestor to the list elements is the div(the grandparent)
+
+note: using the child selctor will not work because the li is 2
+levels deep.
+*/
+.box li{
+    color:blue;
+}
+
+
+/*
+CHAINING SELECTOR
+target 2nd and 3rd list elements and make green
+
+element: list items class:done
+*/
+li.done{
+    color: seagreen
+}
+
+
+/*
+COMBINING COMBINERS
+target "other items" and make 0.5rem
+
+ul is the ancestor to it's paragraph element, 
+which has a class of  "done".
+
+note: child selector would also work 
+*/
+ul p.done{
+    font-size: 0.5rem;
+}
+
+/*MY OWN TEST*/
+/*
+ul ~ p targets the last paragraph following any <ul>
+*/
+ul ~ p{
+    color: peachpuff;
+}
+
+
+
+
