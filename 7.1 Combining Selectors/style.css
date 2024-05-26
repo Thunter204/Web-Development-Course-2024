@@ -15,6 +15,12 @@ target div class="box" and the paragraph element
 below
 
 initially put div.box > p
+
+"div.box > p" selector is much more specific than ".box > p" because of the parent selector definition.
+In the first case, you refer as parent the HTML elements being "div" type (tag) and "box" class, whereas
+in the second case you refer them just by "box" class, whitout pre-filtering by any specific type (tag).
+Both are actually valid solutions for this practice, but they are not same in terms of specificity.
+Hope it was helpful. Cheers!"
 */
 .box > p {
     color:firebrick;

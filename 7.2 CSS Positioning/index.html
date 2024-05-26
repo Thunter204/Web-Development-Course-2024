@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+     /*NOTES: 
+       Absolute or Relative, both works because there is 
+       only two div tags relative to each other so there 
+       are multiple ways that is working. Relative 
+       positioning doesn't required any ancestors 
+       because it is only relative to a supposed 
+       location so basically you just moved to the FORMER 
+       location. Red circle should be positioned absolute 
+       because it has the ancestor which is blue rectangle 
+       div so basically you just moved away from the 
+       FORMER TOP LEFT CORNER of the blue rectangle.*/
+
+    /*the rectangle is relative to the browser*/
+    .blue-box {
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+      position: relative;
+      left:200px;
+      top:200px;
+    }
+    /*although the circle is relative to the rectangle
+       the circle is set to absolute because as long as
+       the rectangle is relative to the webpage, the 
+       circle will always be in the same spot since the 
+       rectangle wont be moving. */
+    .red-circle{
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left:250px; /*50%*/
+      top:150px; /*50%*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>
