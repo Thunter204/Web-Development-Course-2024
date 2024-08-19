@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--  NOTES
+  I initially created three different selectors -- .flag, .blue-stripe, and .circle.
+  I was having issues and also remebered that I could not edit ANYTHING in the HTML (
+    by making 3 different selectors, i would have 3 classes in the HTML butI was supp-
+    osed to only work with the HTML given. 
+
+  POSITIONING: In order to set the position of an elemet relative to a parent,
+  the child element (blue rectangle) must be absolute and the parent position must be 
+  relative.  
+
+
+  )
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .flag {
+      background-color: #CE1126;
+      width: 900px;
+      height: 600px;
+      position: relative;
+    }
+
+    /*CHILD SELECTOR, blue stripe. It is the direct descendant
+      of flag.  */
+    .flag > div{
+      background-color: #002868;
+      width: 900px; /*or, 100% (of the parent)*/
+      height: 300px;
+      position: absolute;
+      top: 150px
+    }
+
+    /*DESCENDANT SELECTOR, white circle. This is the "grandchild"
+     to the flag class*/
+     /*the flag class has a child div which has a child div of its own*/
+    .flag > div > div {
+      background-color: white;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50px;
+      left: 350px;
+    }
+
+    p {
+      color: white;
+      text-align: center;
+      font-size: 5rem;
+    }
+
+    /**/
+    .flag > div div p {
+      color: black;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
