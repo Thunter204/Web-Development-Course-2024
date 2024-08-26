@@ -1,0 +1,87 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+/*
+  Sets the width of the card to 45% of its container which allows the cards to 
+  be displayed side by side. since the two cards have a width of 45% each, they 
+  take up 90% pof the containers width. This leaves 10% of the containers width 
+  unoccupiedwhich is automatically split as margins on both sides and possibly
+  between the cards, creating a visually appealing layout.
+*/
+.card{
+  width: 45%
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.creative {
+  color: midnightblue;
+}
+
+/*
+  '.logo{ width: 100px}': sets the logo width to 100px for smaller screens
+
+  'h1' decreases the h1 front size
+  size to 3.5rem and centers the text
+
+  '.card' makes each card take up 100% width, stacks them VERTICALLY ('display: block'), 
+  30px are added to margin at the bottom, and the text is justified (text is aligned 
+  along botht the left and right margins)
+
+  'card img' adjusts yhe image in the card to be 100% wide, 10px is added to the margiin
+  at the bottom, and the image is kept within the content box ('object-fit: cover')
+*/
+@media (max-width: 680px){
+  .logo{
+    width: 100px;
+  }
+
+  h1{
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card{
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img{
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
