@@ -10,6 +10,7 @@
   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
   -->
   <style>
+    /*flexbox container*/
     .container {
       color: white;
       border: 5px solid gold;
@@ -19,8 +20,9 @@
       flex-direction: column;
     }
 
-    /*Sets all children of container with a width of 100px*/
-    .container > div {
+    /*using the universal selector selects all DIRECT children 
+      of .container class with a width of 100px*/
+    .container > * {
       flex-basis: 100px;
     }
 
